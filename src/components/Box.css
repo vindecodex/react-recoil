@@ -1,0 +1,25 @@
+.box {
+	width: 33.3333%;
+	height: 33.3333%;
+	display: inline-block;
+	border: 2px solid #ececec;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.box:hover {
+	border-color: yellow;
+	color: #fff;
+}
+
+.P1 {
+	background: #5688ff;
+	color: #fff;
+}
+
+.P2 {
+	background: red;
+	color: #fff;
+}
