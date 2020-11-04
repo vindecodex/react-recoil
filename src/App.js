@@ -1,13 +1,15 @@
 import { RecoilRoot } from "recoil";
 
-import Label from "./Label";
-import Button from "./Button";
+import Board from "./components/Board";
+import Status from "./components/Status";
+import "./App.css";
 
 function App() {
   return (
 	  <RecoilRoot>
-		  <Label />
-		  <Button />
+		  <h1>React + Recoil</h1>
+		  <Status />
+		  <Board />
 	  </RecoilRoot>
   );
 }
