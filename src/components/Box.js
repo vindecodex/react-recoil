@@ -38,7 +38,6 @@ const Box = ({data}) => {
 
 	return (
 		<div className={`box ${item}`} onClick={() => onClick()}>
-			{ index }
 		</div>
 	)
 }
