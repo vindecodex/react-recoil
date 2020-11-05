@@ -1,0 +1,15 @@
+.restart-button {
+	border: 1px solid #ececec;
+	border-radius: 10px;
+	padding: 20px 50px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	display: inline-block;
+	margin: 10px auto;
+}
+
+.restart-button:hover {
+	border-color: yellow;
+	cursor: pointer;
+}
