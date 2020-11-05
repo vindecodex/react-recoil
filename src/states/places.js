@@ -4,3 +4,4 @@ export const places = atom({
 	key: "places",
 	default: Array(9).fill("unsigned")
 });
+
