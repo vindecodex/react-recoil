@@ -1,5 +1,7 @@
 import { useRecoilValue } from "recoil";
 import { useState, useEffect } from "react";
+import { Grid } from "react-spinners-css";
+
 import { winner } from "../states/winner";
 import { turn } from "../states/turn";
 import "./Status.css";
@@ -16,6 +18,13 @@ const Status = () => {
 	},[_winner, _turn])
 	return (
 		<div className={`status`}>
+			{ _turn === "P2" ? 
+					(<div>
+						<p>Wait for AI...</p>
+						<Grid color="#ececec"/>
+					</div>)
+					: null
+			}
 			<h2>{ message }</h2>
 		</div>
 	)
