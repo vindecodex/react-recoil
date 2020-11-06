@@ -24,18 +24,21 @@ const Box = ({data}) => {
 		setPlaces(newPlaces)
 		if (_turn === "P1") {
 			setTurn("P2");
-			newPlaces = generatePlace(newPlaces,AImove(newPlaces),"P2");
-			setPlaces(newPlaces)
-			setTurn("P1");
+			setTimeout(() => {
+				if (!playable(item,_winner)) return
+				newPlaces = generatePlace(newPlaces,AImove(newPlaces),"P2");
+				setPlaces(newPlaces)
+				setTurn("P1");
+			}, 2000);
 		}
 		else {
 			setTurn("P1");
 		}
-		if (checkWinner(newPlaces, _turn))
+		if (checkWinner(newPlaces, _turn)) {
 			setWinner(_turn);
-
+			setTurn("P1");
+		}
 	}
-
 	return (
 		<div className={`box ${item}`} onClick={() => onClick()}>
 		</div>
