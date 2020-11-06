@@ -3,6 +3,7 @@ import { RecoilRoot } from "recoil";
 import Board from "./components/Board";
 import Status from "./components/Status";
 import RestartButton from "./components/RestartButton";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 		  <Status />
 		  <Board />
 		  <RestartButton />
+		  <Footer />
 	  </RecoilRoot>
   );
 }
