@@ -6,6 +6,8 @@
 .pnp.js
 yarn.lock
 
+build.sh
+
 # testing
 /coverage
 
